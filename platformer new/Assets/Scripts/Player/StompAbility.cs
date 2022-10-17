@@ -16,7 +16,7 @@ public class StompAbility : Ability
             Transform stomp = parrent.transform.Find("Stomp");
             tr = stomp.GetComponent<TrailRenderer>();
 
-            Vector2 attackRadius = new Vector2(16f, 20f);
+            Vector2 attackRadius = new Vector2(16f, -100f);
             
             animator.SetTrigger("StompAttack");
             tr.emitting = true;
