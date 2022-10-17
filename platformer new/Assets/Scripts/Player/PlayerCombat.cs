@@ -34,7 +34,7 @@ public class PlayerCombat : MonoBehaviour
         attackPointRight = transform.Find("AttackPointRight");
         
         stomp = GameObject.Find("Stomp").transform;
-        stompSize =  new Vector3(16f, 20f, 0f);
+        stompSize =  new Vector3(16f, -100f, 0f);
         sprite = GetComponentInChildren<SpriteRenderer>();
         originalMaterial = sprite.material;
         blinkMaterial = Resources.Load("BlinkMaterial",typeof(Material)) as Material;
